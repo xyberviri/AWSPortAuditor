@@ -1,7 +1,5 @@
 # AWSPortAuditor
-A collection of scripts created to simplify the auditing of "open" ports in AWS security groups. Ports are listed b
-
-    Supports MFA CLI by way of "aws sts get-session-token"
+A collection of scripts created to simplify the auditing of "open" ports in AWS security groups.
 
 Download and execute run.cmd
 
