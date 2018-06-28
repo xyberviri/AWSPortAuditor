@@ -5,8 +5,7 @@ Download and execute run.cmd
 
 you will be prompted to select a profile to run this against. 
 
-
-# To configure MFA support
+# Configure MFA support (optional)
 
 This tool supports MFA by way of the `sts get-session-token` api. Ideally your "real" aws cli key only has access to the sts:GetSessionToken api. Using that api this requests a set of temporary credentials and then updates your "<home>\.aws\credentials" file
 
@@ -78,3 +77,8 @@ Basically both aws:MultiFactorAuthAge & aws:MultiFactorAuthPresen conditions sho
 
 Additional note: the root account can not be MFA protected.
 
+
+# Why .bat, jq and various gnu32 tools
+Most of the componets were a result of expanding the aws cli with small batch files so that i could gather information faster from the command line. Then being tasked with gathering all of the "open ports" that were accessible as a result of the security groups. That created new batch files and modfied some old ones. 
+
+feel free to use what ever 
